@@ -1,7 +1,7 @@
 /* kOpIrAjT mAjLo <3<3<3 xoxoxoxo */
 
-const addVModel = (
-  computedName = 'valueModel',
+const vModel = (
+  computedName = 'model',
   type = [Array, Boolean, Number, String],
   def = false,
 ) => ({
@@ -24,4 +24,4 @@ const addVModel = (
   },
 })
 
-export default addVModel
+export default vModel

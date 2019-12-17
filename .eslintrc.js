@@ -21,7 +21,7 @@ module.exports = {
     "comma-dangle": [2, "always-multiline"],
     "consistent-return": "off",
     eqeqeq: "off",
-    "import/extensions": [2, "always"],
+    "import/extensions": [2, { "js": "never", "vue": "always" }],
     "import/no-cycle": "off",
     "import/no-extraneous-dependencies": [
       "error",
@@ -103,7 +103,7 @@ module.exports = {
         singleline: 1,
         multiline: {
           max: 1,
-          allowFirstLine: false
+          allowFirstLine: true,
         }
       }
     ],

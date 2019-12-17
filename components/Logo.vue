@@ -1,5 +1,6 @@
 <template>
   <svg
+    ref="logo"
     class="NuxtLogo"
     width="245"
     height="180"
@@ -26,18 +27,14 @@
     </g>
   </svg>
 </template>
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-}
+<script>
+import { TimelineLite, Expo } from 'gsap'
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
+export default {
+  mounted() {
+    const tl = new TimelineLite()
 
-  100% {
-    opacity: 1;
-  }
+    tl.from(this.$refs.logo, { duration: 1.5, y: -20, opacity: 0, rotation: 5, transformOrigin: '50%, 50%', ease: Expo.easeOut })
+  },
 }
-</style>
+</script>

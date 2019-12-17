@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Wiper from '~/components/Wiper.vue'
+import Logo from '@/components/Logo.vue'
+import Wiper from '@/components/Wiper.vue'
 
 export default {
   components: {
