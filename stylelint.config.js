@@ -9,9 +9,8 @@ module.exports = {
 
   plugins: [
     'stylelint-order',
-    'stylelint-declaration-strict-value',
     'stylelint-declaration-block-no-ignored-properties',
-    'stylelint-color-format'
+    'stylelint-color-format',
   ],
 
   rules: {
@@ -27,22 +26,22 @@ module.exports = {
         'dollar-variables',
         {
           type: 'at-rule',
-          name: 'extend'
+          name: 'extend',
         },
         {
           type: 'at-rule',
           name: 'include',
-          hasBlock: false
+          hasBlock: false,
         },
         'declarations',
         {
           type: 'at-rule',
           name: 'include',
-          hasBlock: true
+          hasBlock: true,
         },
         'rules',
-        'at-rules'
-      ]
+        'at-rules',
+      ],
     ],
 
     // url() function
@@ -70,15 +69,6 @@ module.exports = {
     // scss declarations
     'scss/declaration-nested-properties': 'never',
     'plugin/declaration-block-no-ignored-properties': true,
-    'scale-unlimited/declaration-strict-value': [
-      ['/color/', 'z-index', 'font-size', 'font-family'],
-      {
-        ignoreKeywords: {
-          '': ['inherit'],
-          '/color/': ['currentColor', 'transparent', 'inherit']
-        }
-      }
-    ],
 
     // scss variables
     'scss/dollar-variable-no-missing-interpolation': true,
@@ -124,12 +114,12 @@ module.exports = {
       {
         ignoreAtRules: ['else'],
         except: ['blockless-after-same-name-blockless', 'first-nested'],
-        ignore: ['after-comment']
-      }
+        ignore: ['after-comment'],
+      },
     ],
     'block-closing-brace-newline-after': [
       'always',
-      { ignoreAtRules: ['if', 'else'] }
+      { ignoreAtRules: ['if', 'else'] },
     ],
 
     'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
@@ -140,6 +130,6 @@ module.exports = {
     'scss/at-if-closing-brace-space-after': 'always-intermediate',
 
     // using only rgb colors
-    'color-named': 'never'
-  }
+    'color-named': 'never',
+  },
 }

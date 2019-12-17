@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <wiper />
       <logo />
       <h1 class="title">
         takahashi
@@ -9,7 +10,11 @@
         sugoi desu ne
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          class="button--green"
+        >
           Documentation
         </a>
         <a
@@ -26,11 +31,13 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Wiper from '~/components/Wiper.vue'
 
 export default {
   components: {
-    Logo
-  }
+    Logo,
+    Wiper,
+  },
 }
 </script>
 

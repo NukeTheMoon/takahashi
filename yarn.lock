@@ -10243,7 +10243,7 @@ stylelint-declaration-block-no-ignored-properties@^2.2.0:
   dependencies:
     postcss "^7.0.17"
 
-stylelint-declaration-strict-value@^1.0.4, stylelint-declaration-strict-value@^1.1.7:
+stylelint-declaration-strict-value@^1.0.4:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/stylelint-declaration-strict-value/-/stylelint-declaration-strict-value-1.1.7.tgz#67e1bb5cf38eb94d8221c3d13fa61f6296563126"
   integrity sha512-dzGnuZ41EzLDEoNbFIAzZ5ppqACcsBoZa8JugSMJsUhNGBLVwzB5fKxL8Bfy1AsFFjPkuvv+6RsFKRC0iY1dmw==
