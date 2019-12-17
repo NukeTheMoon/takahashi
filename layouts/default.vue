@@ -4,22 +4,24 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+$font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif;
+$base-font-size: 10px;
+$nuxt-green: #3b8070;
+$nuxt-dark-green: #35495e;
+$white: #fff;
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-family: $font;
+  font-size: $base-font-size;
   word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -27,29 +29,29 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid $nuxt-green;
+  color: $nuxt-green;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+  color: $white;
+  background-color: $nuxt-green;
 }
 
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid $nuxt-dark-green;
+  color: $nuxt-dark-green;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
 .button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  color: $white;
+  background-color: $nuxt-dark-green;
 }
 </style>

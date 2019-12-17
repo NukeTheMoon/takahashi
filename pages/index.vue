@@ -34,7 +34,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$font: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$big-font: 100px;
+$kinda-big-font: 42px;
+$space-brown: #35495e;
+$bog-pink: #526488;
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -45,19 +52,18 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: $font;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-size: $big-font;
+  color: $space-brown;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: $bog-pink;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
