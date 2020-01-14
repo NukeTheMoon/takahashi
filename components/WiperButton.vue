@@ -14,10 +14,6 @@ export default {
   mixins: [
     vModel('model', [Boolean], null),
   ],
-
-  mounted() {
-    console.log(this.model)
-  },
 }
 </script>
 
@@ -26,5 +22,6 @@ export default {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  z-index: 2;
 }
 </style>
