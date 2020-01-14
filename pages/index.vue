@@ -49,6 +49,23 @@ $kinda-big-font: 42px;
 $space-brown: #35495e;
 $bog-pink: #526488;
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: serif;
+  background-color: #f3f3f3;
+  color: #101010;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100vw;
+  text-rendering: optimizeLegibility;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;

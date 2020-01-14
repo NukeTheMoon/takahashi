@@ -5,7 +5,9 @@
       <div class="wiper__move">
         <div class="wiper__reverse">
           <div class="wiper__inner">
-            <wiper-menu/>
+            <wiper-menu
+              :is-enabled="show"
+            />
           </div>
         </div>
       </div>
@@ -91,7 +93,7 @@ export default {
 
 <style lang="scss">
 .wiper {
-  color: #fff;
+  // color: #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -106,6 +108,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
   }
 
   &__move {
@@ -116,6 +119,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    pointer-events: auto;
   }
 
   &__reverse {
